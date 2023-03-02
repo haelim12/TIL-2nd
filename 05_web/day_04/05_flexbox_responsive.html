@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +7,41 @@
   <title>Document</title>
   <style>
     .card {
-      width: 80%;
       border: 1px solid black;
-      /* 1 */
+      width: 80%;
       display: flex;
-      /* 2 */
+      /* 초과됐을 때 개행 */
       flex-wrap: wrap;
     }
-
-    img {
+    
+    /* 이미지 사이즈 딱 맞추기 */
+    image {
       width: 100%;
     }
 
-    .thumbnail {
-      /* 3 */
+    .card-img {
       flex-basis: 700px;
-      /* 4 */
       flex-grow: 1;
       /* flex: 1 700px; */
     }
 
     .content {
-      /* 3 */
+      border: 1px solid black;
       flex-basis: 350px;
-      /* 4 */
       flex-grow: 1;
-      /* flex: 1 350px; */
     }
+
 
   </style>
 </head>
-
 <body>
   <div class="card">
-    <img class="thumbnail" src="images/sample.jpg" alt="sample">
+    <img class="card-img" src="images/sample.jpg" alt="">
     <div class="content">
       <h2>Heading</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus sed expedita ut nihil tempora
-        neque autem odio eos, repudiandae blanditiis, molestiae consequatur. Adipisci illo dolor repellat alias
-        maiores.
-        Aut?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur officiis rem veritatis numquam odit inventore, quae ipsum impedit accusamus totam! Rem dignissimos distinctio quae quos expedita quidem maiores debitis quia?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eaque labore vitae praesentium repellendus accusantium quam ex itaque, dolorum eius! Et, mollitia, officia fugit inventore provident odio alias autem assumenda ea atque eos repellendus esse amet officiis quaerat pariatur, laboriosam adipisci deserunt minus debitis eaque magnam aut. Soluta ipsa, totam similique adipisci sunt eos doloremque consequuntur a ducimus accusamus facilis ex odio voluptas minus, eveniet amet et, voluptate voluptates omnis beatae ipsam inventore quis. Necessitatibus rem perspiciatis hic inventore, temporibus nobis natus eius corporis, deserunt, et quidem quis excepturi ducimus laudantium aliquid amet id enim? Maxime labore quis repudiandae ab?</p>
     </div>
-  </div>
+  </div> 
 </body>
-
 </html>
